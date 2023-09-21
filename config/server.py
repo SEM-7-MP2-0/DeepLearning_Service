@@ -2,6 +2,7 @@ import os
 from middleware.access_token import VerifyAccessToken
 from routes import index
 
+
 def create_app(app, config_file="settings.py"):
     dirname = os.path.dirname(__file__)
     config_file = os.path.join(dirname, config_file)
