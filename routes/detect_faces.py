@@ -19,7 +19,7 @@ def detect_faces_handler():
                 image = cv2.imdecode(
                     np.fromstring(image_file.read(), np.uint8), cv2.IMREAD_COLOR
                 )
-                image_path = "./output/" + str(uuid.uuid4()) + ".jpg"
+                image_path = "output/" + str(uuid.uuid4()) + ".jpg"
                 # save image to disk
 
                 cv2.imwrite(image_path, image)
