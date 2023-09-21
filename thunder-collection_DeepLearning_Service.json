@@ -1,0 +1,39 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "DeepLearning_Service",
+    "dateExported": "2023-09-21T18:08:09.660Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "81c49615-d3d8-4907-aa25-fad0713c1506",
+            "colId": "de01e8bd-1b03-4439-b804-c50a0fc9beaa",
+            "containerId": "",
+            "name": "Detect Faces",
+            "url": "http://localhost:5000/detect_faces",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-09-21T12:39:13.578Z",
+            "modified": "2023-09-21T18:07:28.824Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "sjhdfkfgskfhshkgfshdgfjsd"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\salman\\OneDrive\\Desktop\\SEM7\\Project-2\\DeepLearning_Service\\images\\12.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}
