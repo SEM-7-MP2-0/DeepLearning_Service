@@ -13,7 +13,10 @@ output/**
 !output/.gitkeep
 # C extensions
 *.so
+# GCP service account
 gcp_sa.json
+# K8S secret
+secret.yml
 # Distribution / packaging
 .Python
 build/

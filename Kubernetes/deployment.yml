@@ -18,8 +18,15 @@ spec:
       - name: deeplearningservice-app
         image: salmanad01/rfid-deeplearningservice:latest
         imagePullPolicy: Always
+        volumeMounts:
+          - name:  secrets_volume
+            mountPath:  /opt
         ports:
         - containerPort: 5002
+      volumes:
+        - name: secrets_volume
+          secret:
+            secretName: deeplearningservice-secret
 
 ---
 apiVersion: v1
