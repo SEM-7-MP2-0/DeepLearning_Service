@@ -124,13 +124,12 @@ metadata:
   name: my-ingress  
   annotations:
     kubernetes.io/ingress.class: "gce"
-    kubernetes.io/ingress.global-static-ip-name: "ingress-webapps"
 spec:
   rules:
     - host: project.rfidbackend.software
       http:
         paths:
-          - path: /output/{id}
+          - path: /output
             pathType: Prefix
             backend:
               service:
